@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Tutorials</title>
+    <style>
+
+button{
+    width:200px;
+    padding: 12px 0;
+    text-align:center;
+    margin:10px 20px;
+    border-radius:5px;
+    font-weight:bold;
+    border:2px solid teal;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    margin-top:30px;
+    transform:translateY(-50%);
+}
+    
+span{
+    background:teal;
+    height:100%;
+    width:0;
+    border-radius:25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:0.5s;
+}
+
+button:hover span{
+    width:100%;
+}
+
+.btn:hover {
+
+    background-color: teal;
+}
+
+
+h2,h3{
+    color:white;
+}
+
+article{
+    
+    background-color: transparent;
+   
+}
+
+input[type="text"],input[type="email"]{
+
+    color:white;
+}
+
+
+    
+ </style>
+
+</head>
+<body>
+<div class="banner">
+
+<div class="navbar">
+
+<img src="logo.png" class="logo"> 
+<ul>
+
+    <li><a href="home.html">Home</a></li> 
+    <li><a href="contact.html">Contact</a></li>
+    <li class="dropdown">
+        <a href="tutorials.html">Tutorials ▼</a>
+        <div class="dropdown-content">
+            <a href="HomeDecor.html">HOMEDECOR</a>
+            <a href="PaintingTechniques.html">PaintingTechniques</a>
+            <a href="Recycled_crafts.html">Recycledcrafts</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="Login.html">Login ▼</a>
+        <div class="dropdown-content">
+            <a href="Register.html">Register</a>
+            <a href="Login.html"id="logoutLink">LOGOUT</a>
+        </div>
+    </li>
+    <li><a href="Project.html">Projects</a></li>
+  
+</ul>
+</div>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to DIY & Art Tutorials</h2>
+                    <h3>Your one-stop shop for all things creative!</h3>
+                </hgroup>
+                <p>Discover a world where creativity knows no bounds. From simple home decor projects to intricate art techniques, our tutorials are designed to inspire and guide you every step of the way.</p>
+                <figure>
+                
+                    <img src="tutorial1.png" alt="Art Supplies" />
+                    <img src="tutorial2.png" alt="Craft Supplies" />
+                    <img src="tutorial3.png" alt="DIY Project" />
+                                        
+                </figure>
+                <br>
+                <h3>Featured Tutorial</h3>
+                <p>Learn how to create a beautiful piece of art with our step-by-step guide. Perfect for beginners and seasoned artists alike.</p>
+                <h3>Video Tutorials</h3>
+                <p>Watch and learn with our video tutorials:</p>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AiXiBvy1t1s?si=_hZKc7tTf_BvhUkx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_IiRqqSsprg?si=jBS8QzRH16O9cvev" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Get Started</h3>
+                
+                <p>Choose a category below to explore our tutorials:</p>
+                <ul>
+                    <a href="HomeDecor.html"><li>Home Decor</li></a>
+                    <a href="PaintingTechniques.html"><li>Painting Techniques</li></a>
+                    <a href="Recycled_crafts.html"><li>Recycled Crafts</li></a>
+                </ul>
+            </section>
+        </div>
+    </main>
+     <section aria-label="Subscribe" class="subscribe-section">
+     <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Stay Updated</h2>
+                    <h3>Subscribe to our newsletter</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Full Name" aria-label="First name" required />
+                    <input type="email" id="email" name="email" placeholder="Email Address" aria-label="Email address" required />
+                    <button class="btn" type="submit" onclick="event.preventDefault()">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var logoutLink = document.getElementById('logoutLink');
+            logoutLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Logging out!!'); 
+               
+                window.location.href = 'Login.html';
+            });
+        });
+    </script>
+    
+   
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style4.css">
+    <title>DIY and Art Contact</title>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" class="logo"> 
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="tutorials.html">Tutorials ▼</a>
+                    <div class="dropdown-content">
+                        <a href="HomeDecor.html">HOMEDECOR</a>
+                        <a href="PaintingTechniques.html">PaintingTechniques</a>
+                        <a href="Recycled_crafts.html">Recycledcrafts</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Login.html">Login ▼</a>
+                    <div class="dropdown-content">
+                        <a href="Register.html">Register</a>
+                        <a href="Login.html"id="logoutLink">LOGOUT</a>
+                    </div>
+                </li>
+                <li><a href="Project.html">Projects</a></li>
+            </ul>
+        </div>
+   
+    <div class="content">
+        <div class="input">
+
+        <h1>Contact Us</h1>
+        
+        <p>🧑 Name *</p><div>
+       
+            <input type="text" id="name" name="name" placeholder="First Name" required>
+            <input type="text" id="name" name="name" placeholder="Last Name" required>
+       
+        </div>
+       
+        <p>📧 Email *</p><div>
+       
+          <input type="email" placeholder="Email" name="email" required>
+       
+       </div>
+
+       <p>📱 Mobile *</p><div>
+       
+        <input type="tel" placeholder="Mobile Number" name="mobile" required>
+     
+     </div>
+
+     <p>💬 Message</p><div>
+       
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                
+     </div>
+
+     <p>🔍Feedback</p><div>
+       
+        <textarea id="Feedback" name="Feedback" placeholder="Your Feedback" required></textarea>
+            
+     </div>
+
+    
+
+     <p>Fields marked with an asterisk (*) are required</p>
+
+       
+       <div>
+       
+           <button type="button"><span></span>SUBMIT</button>
+       
+        </div>
+
+        
+        </div>
+
+       
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var logoutLink = document.getElementById('logoutLink');
+                logoutLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Logging out!!'); 
+                    window.location.href = 'Login.html';
+                });
+            });
+        </script>
+        
+</body>
+</html>

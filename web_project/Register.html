@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style8.css">
+    <title>Register</title>
+</head>
+<body>
+<div class="banner">
+    <div class="navbar">
+        <img src="logo.png" class="logo"> 
+        <ul>
+            <li><a href="home.html">Home</a></li> 
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+                <a href="tutorials.html">Tutorials ▼</a>
+                <div class="dropdown-content">
+                    <a href="HomeDecor.html">HOMEDECOR</a>
+                    <a href="PaintingTechniques.html">PaintingTechniques</a>
+                    <a href="Recycled_crafts.html">Recycledcrafts</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="Login.html">Login ▼</a>
+                <div class="dropdown-content">
+                    <a href="Register.html">Register</a>
+                    <a href="Login.html"id="logoutLink">LOGOUT</a>
+                </div>
+            </li>
+            <li><a href="Project.html">Projects</a></li>
+        </ul>
+    </div>
+   
+    
+     <div class="main">
+        <div class="register">
+            
+
+            <h1>SIGN UP</h1>
+            <br>
+
+            <form id="register" method="post">
+
+                <label> First Name: </label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter First Name">
+                <br><br>
+
+                <label> Last Name: </label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter Last Name">
+                <br><br>
+
+                <label> Age: </label>
+                <br>
+                <input type="number" name="age" id="name" placeholder="Enter Age">
+                <br><br>
+
+                <label> Email: </label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter Email">
+                <br><br>
+
+                <label> Password: </label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <br><br>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                
+                <div>
+     
+                    <button type="button"><span></span><a href="home.html"><li>REGISTER</li></a></button>
+                
+                 </div>
+
+            </form>
+        
+        
+        
+        </div>
+     </div>
+     
+     </div>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var logoutLink = document.getElementById('logoutLink');
+            logoutLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Logging out!!'); 
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+    
+     
+     
+</div>
+</body>
+</html>

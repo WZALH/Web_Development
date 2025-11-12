@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycled Crafts</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" class="logo"> 
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="tutorials.html">Tutorials ▼</a>
+                    <div class="dropdown-content">
+                        <a href="HomeDecor.html">HOMEDECOR</a>
+                        <a href="PaintingTechniques.html">PaintingTechniques</a>
+                        <a href="Recycled_crafts.html">Recycledcrafts</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Login.html">Login ▼</a>
+                    <div class="dropdown-content">
+                        <a href="Register.html">Register</a>
+                        <a href="Login.html"id="logoutLink">LOGOUT</a>
+                    </div>
+                </li>
+                <li><a href="Project.html">Projects</a></li>
+            </ul>
+        </div>
+
+        <div class="crafts">
+        <main>
+            <h1>Welcome to Recycled Crafts</h1>
+            <p>Your guide to creative recycling and sustainable crafts.</p>
+         <p>Explore our collection of projects and tutorials to inspire your next creation.</p>
+        
+        </main>
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: 20px;">
+            <figure>
+                <img src="recycle1.png" alt="Recycled Craft 1">
+               
+            </figure>
+            <figure>
+                <img src="recycle2.png" alt="Recycled Craft 2">
+                
+            </figure>
+            <figure>
+                <img src="recycle3.png" alt="Recycled Craft 3">
+               
+            </figure>
+            <figure>
+                <img src="recycle4.png" alt="Recycled Craft 4">
+                
+            </figure>
+        </div>
+        </main>
+       </div>
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var logoutLink = document.getElementById('logoutLink');
+            logoutLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Logging out!!'); 
+                
+                window.location.href = 'Login.html';
+            });
+        });
+    </script>
+    
+</body>
+</html>
